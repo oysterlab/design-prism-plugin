@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "script": "./command.js",
+      "identifier": "component-inspector",
+      "name": "component-inspector",
+      "handlers": {
+        "actions": {
+          "SelectionChanged.finish": "toggleComponentInspector"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "plugin-native",
+    "items": [
+      "plugin-native.my-command-identifier"
+    ]
+  }
+}
